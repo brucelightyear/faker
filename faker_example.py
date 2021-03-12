@@ -40,7 +40,8 @@ def random_address(size):
     fake = Faker('en_CA')
     addressList = []
     for _ in range(size):
-        addressList.append(fake.address().split(", ")[0] + ", QC " + fake.postalcode_in_province("QC"))
+        address = fake.address().split(", ")[0].replace('\n', ', ')
+        addressList.append(address + ", QC " + fake.postalcode_in_province("QC"))
     
     return np.random.choice(addressList, size=size)
 
@@ -60,8 +61,10 @@ df = pd.DataFrame(columns=['First', 'Last', 'Gender', 'Birthdate','Address', 'NA
 
 df['First'] = random_names('first_names', size)
 df['Last'] = random_names('last_names', size) 
+df['Gender'] = random_genders(size) 
 df['Birthdate'] = random_dates(start=pd.to_datetime('1940-01-01'), end=pd.to_datetime('2008-01-01'), size=size)
 df['Address'] = random_address(size)
 df['NAS'] = random_nas(size)
 df.to_csv('fake-file.csv')
+
 print("Terminé")
