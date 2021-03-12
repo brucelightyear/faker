@@ -1,13 +1,12 @@
 # faker
 
-Python Faker tutorial
-<https://zetcode.com/python/faker/>
+Faker is a Python package that generates fake data for you. Whether you need to bootstrap your database, create good-looking XML documents, fill-in your persistence to stress test it, or anonymize data taken from a production service, Faker is for you.
 
 Faker Read the docs
-<https://faker.readthedocs.io/en/master/fakerclass.html>
+<https://faker.readthedocs.io/en/master/>
 
-Faker locale
-<https://faker.readthedocs.io/en/master/locales/en_CA.html>
+Python Faker tutorial
+<https://zetcode.com/python/faker/>
 
 # example
 
