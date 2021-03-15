@@ -1,8 +1,12 @@
 # faker usage example
 
+## Description
+
 Faker is a Python package that generates fake data for you. Whether you need to bootstrap your database, create good-looking XML documents, fill-in your persistence to stress test it, or anonymize data taken from a production service, Faker is for you.
 
-Source 
+## Sources
+
+Source
 <https://github.com/joke2k/faker>
 
 Faker Read the docs
@@ -11,7 +15,7 @@ Faker Read the docs
 Python Faker tutorial
 <https://zetcode.com/python/faker/>
 
-# example
+## Results
 
 >,First,Last,Gender,Birthdate,Address,NAS
 >0,Laurie,Larocque,F,1969-12-04,"160 Sanchez Forge, Wrightton, QC G7H 8K6",811 738 434
